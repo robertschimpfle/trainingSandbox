@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Demo') {
       steps {
-        bat(script: 'dir', returnStatus: true, returnStdout: true)
+        sh 'ls -al'
       }
     }
   }
